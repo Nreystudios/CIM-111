@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+
+body{
+  background-color: #c6ecd8;
+}
+
+h1{
+  color: #000d1a;
+}
+
+h3{
+  background-color: rgb(230, 230, 230);
+  font-family: 'Major Mono Display', monospace;
+}
+
+a{color:blue;
+  text-decoration: none;
+  font-size: 24px;
+
+}
+
+a:hover{
+  background-color:yellow;
+
+}
+
+.textLinks{
+font-size: 16px;
+}
+
+a {color: #000099;
+text-decoration: none;
+}
+
+#Dogs{
+  color:orange
+}
+
+#cats{
+  color:orange
+}
+
+#specialFont{
+  font-family:'Open Sans Condensed', sans-serif;
+}
+
+#address{
+  color:grey
+}
+
+
+.purple{
+  color: purple;
+}
+
+.red{
+  color: red;
+}
+
+#sval {
+  border: ridge #ccc;
+  border-width: 6px;
+  border-length: 6px
