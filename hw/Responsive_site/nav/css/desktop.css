@@ -1,0 +1,46 @@
+header {
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+nav{
+  width:940px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+nav ul{
+  margin-left: -15px;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right:20px;
+  text-decoration: none;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: grey;
+}
+
+main{
+  width: 80%;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+}
+
+footer{
+  width: 80%;
+  height: 100px;
+  background-color: white;
+  margin: 0 auto;
+}

@@ -1,0 +1,73 @@
+  header{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  main{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  footer{
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  #grid1{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-row-gap: 20px;
+      grid-column-gap: 20px;
+  }
+
+  #grid2{
+    display: grid;
+    grid-template-row: 1fr;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+
+  #grid3{
+    display: grid;
+    grid-template-row: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    margin-left: 130px;
+  }
+
+  #grid4{
+    display: grid;
+    grid-template-row: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+      }
+
+
+  .imageGallery{
+    width: 100%;
+    margin: 0auto;
+  }
+
+  .imageGallery2{
+    width: 80%
+    margin: 0auto;
+  }
+
+  #listLogo{
+    margin-left: 90px;
+  }
+
+  form{
+    margin-bottom: 20px;
+  }
+
+  p{
+    text-align: center;
+  }
