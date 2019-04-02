@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="1tr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vegan gluten free chocolate chip cookies</title>
+
+      <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Asap|Source+Sans+Pro');
+        @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+        h1{
+          font-family: 'Asap', sans-serif;
+        }
+
+        h2{
+          font-family: 'Asap', sans-serif;
+        }
+
+        p{
+          font-family: 'Slabo 27px', serif;
+        }
+
+        ul{
+          font-family: 'Slabo 27px', serif;
+        }
+
+        li{
+          font-size:18px;
+          font-family: 'Slabo 27px', serif;
+        }
+
+      </style>
+
+  </head>
+
+  <body>
+    <h1>PERFECT VEGAN GLUTEN-FREE CHOCOLATE CHIP COOKIES</h1>
+    <img src="images/cookies.jpg" height="500">
+    <p>The other day, I was thinking through my rolodex of recipes and realized
+      I don’t have a basic vegan gluten-free chocolate chip cookie on the blog.<br></br>
+      I KNOW. It’s just wrong. So, obviously, I had to fix that. The rest is
+      history. Friends, ready your aprons and let’s bake!</p>
+    <h2 id="getstarted">Let's get started!</h2>
+    <p id="basics">This 9-ingredient recipe starts with aquafaba! Yes, aquafaba
+       knows no bounds. It acts as a binding and leavening agent in these
+       cookies, which is kind of amazing.</p>
+
+    <h2 id="ingredientTitle">Ingredients</h2>
+      <img src="images/ingredients.jpg" id="ingredients" height="500"/>
+            <div id="replacetext"></div>
+          <p id="ingredientlist">The ingredients are: </br>
+            - 1 1/4 cup almond flour </br>
+            - 1/4 cup of vegan dark chocolate chips </br>
+            - 1/3 cup of gluten free flour</br>
+            - 1/2 tsp of baking powder</br>
+            - 1/4 tsp of salt</br>
+            - 1/3 cup of organic brown sugar</br>
+            - 1/4 cup of aquafaba</br>
+            - 3 tbsp of coconut oil</br>
+            - 1/2 tsp of vanilla extract</br>
+          </p>
+
+    <h2 id="toggle">Step by Step Instructions</h2>
+      <ul id="togglesteps" class="info">
+        <li id="step1">Step 1</li>
+          <p>In a large mixing bowl, stir together almond flour, dark chocolate
+            chips, gluten-free flour, baking powder, salt, and organic brown sugar.
+            Set aside.</p>
+        <li id="step2">Step 2</li>
+          <p>In a separate mixing bowl, beat aquafaba using a handheld mixer
+            until light and fluffy and loose peaks have formed. (Add a little
+            cream of tartar to help them along if not whipping.)</p>
+        <li id="step3">Step 3</li>
+          <p>To the aquafaba, add the melted coconut oil and vanilla and beat or
+             whisk to combine. Then add to the dry ingredients and mix until just
+             combined. You should have a firm, semi-tacky dough.  </p>
+        <li id="step4">Step 4</li>
+          <p>Loosely cover and let chill in the refrigerator for 30 minutes. In
+            the meantime, preheat oven to 375 degrees F (190 C) and line a
+            baking sheet with parchment paper.</p>
+        <li id="step5">Step 5</li>
+          <p>Scoop out 1 1/2-Tablespoon amounts of dough (I like this scoop) and
+            transfer to your lined baking sheet. Use the palm of your hand to
+            smash the cookies down slightly into small mounds. </br>They won’t spread
+            much, so no need to leave a ton of room between cookies. There should
+             be about 11 cookies (amount as original recipe is written // expect a
+             different yield if altering batch size).</p>
+        <li id="step6">Step 6</li>
+          <p>Bake for 12-15 minutes or until the edges are golden brown. Be
+            careful not to burn (especially on the bottoms).</p>
+        <li id="step7">Step 7</li>
+          <p>Remove from oven and let cool on the pan for 5 minutes. Then
+            carefully loosen with a spatula and enjoy or continue to let cool.</p>
+      </ul>
+
+      <h2>Tips</h2>
+        <p>*If avoiding nuts: try subbing a blend of oat flour, coconut flour,
+          and ground flax or sesame seeds. Alternatively, we suspect the seed </br>
+          mixture called Superfood Burcha from Feel the Lean would be a nice
+          substitution. Feel free to mix and match any of these seeds. If </br>
+          using large seeds (like pumpkin or sunflower seeds), give them a blitz in a
+          blender or food processor or chop finely with a knife before </br>using. We
+          have not tested this idea - it is just a suggestion.
+          *Recipe adapted from our Trail Mix Cookies, originally adapted from the </br>
+          Sprouted Kitchen cookbook.
+          *Nutrition information is a rough estimate* </br></br>
+        </p>
+
+
+    <script type="text/javascript" src="js/jquery.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+           $(document).ready(function(){
+
+           $("#basics").hide();
+           $(".info").hide();
+           $("#ingredientlist").hide();
+
+           $("#getstarted").mouseenter(function(){
+             $("#getstarted").css("color", "grey");
+           });
+           $("#getstarted").mouseleave(function(){
+             $("#getstarted").css("color", "black");
+           });
+           $("#getstarted").click(function(){
+               $("#basics").show();
+             });
+           $("#toggle").click(function(){
+               $("#togglesteps").toggle(1300);
+             });
+           $("#ingredients").click(function(){
+               $("#replacetext").html("<h2>List:</h2>");
+             });
+           $("#ingredientTitle").click(function(){
+               $("#ingredientlist").show();
+             });
+
+           });
+  </script>
+
+</body>
+
+</html>
