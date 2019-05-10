@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Natalie Rey</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+  font-family: 'Montserrat', sans-serif;
+
+      nav{
+        width: 325px;
+        height: 50px;
+        background-color: white;
+        padding-left:50px;
+        margin-bottom: 250px;
+      }
+
+      nav ul{
+        margin-left: -5px;
+      }
+      nav ul li{
+        list-style: none;
+        margin-right: 20px;
+        margin-left:-2px;
+        margin-bottom: 19px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      nav ul li a:hover{
+        color: lightgrey;
+      }
+
+      nav[role="main"] ul{
+      margin-bottom: 45px;
+      }
+
+      nav[role="main"] ul li{
+      font-size: 14px;
+      }
+
+      nav[role="sub"] ul li{
+        font-size: 11px;
+        margin-top: -10px;
+      }
+
+
+      #title{
+        height: 120px;
+        padding-left:-30px;
+        margin-bottom:-25px;
+        }
+
+
+      .grid-item {
+       float: left;
+       width: 200px;
+       height: auto;
+      }
+
+      .gridImages{
+        width: 100%;
+      }
+
+  .grid-item--width1 { width: 490px; }
+      .grid-item--width2 { width: 490px; }
+
+      .grid-item--height2 { height: 400px; }
+
+    /* fluid 5 columns
+      .grid-sizer,
+      .grid-item { width: 20%; }
+    2 columns
+      .grid-item--width2 { width: 40%; }
+        */
+
+        #col1{
+            width: 300px;
+            height: 1000px;
+            position: fixed;
+            top: 0;
+            padding-left:20px;
+            display: inline-block;
+        }
+        #col2{
+          width: 75%;
+          height: auto;
+          display: inline-block;
+          margin-left: 385px;
+        }
+    </style>
+
+  </head>
+
+  <body>
+
+    <main>
+      <section id="col1">
+        <h1 id="title"><img src= "images/logo.png"></h1>
+        <nav role="main">
+          <ul>
+            <li><a href="cover.html">cover</a></li>
+            <li><a href="portraits.html">portraits</a></li>
+            <li><a href="her.html">her</a></li>
+            <li><a href="skin.html">skin</a></li>
+            <li><a href="fashion.html">fashion</a></li>
+            <li><a href="within.html">within</a></li>
+            <li><a href="speakingintongues.html">speaking in tongues</a></li>
+
+          </ul>
+        </nav>
+
+        <nav role="sub">
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        </nav>
+
+
+      </section>
+
+      <section id="col2">
+        <div class="grid">
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/speaking1.jpg" />
+          </div>
+
+          <div class="grid-item grid-item--width2">
+              <img class="gridImages" src="images/speaking2.jpg" />
+          </div>
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/speaking3.jpg" />
+          </div>
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/speaking4.jpg" />
+          </div>
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/speaking5.jpg" />
+          </div>
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/speaking6.jpg" />
+          </div>
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/speaking7.jpg" />
+          </div>
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/speaking8.jpg" />
+          </div>
+
+       </div>
+
+      </section>
+    </main>
+
+
+ <script type="text/javascript" src="plugin/jquery.js"></script>
+
+ <script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+
+ <script type="text/javascript" src="plugin/masonry.pkgd.js"></script>
+ <script >
+     $("document").ready(function(){
+
+       $('.grid').masonry({
+   // set itemSelector so .grid-sizer is not used in layout
+      itemSelector: '.grid-item',
+   // use element for option
+      columnWidth: 250,
+      percentPosition: true
+      })
+
+      //   var $grid = $('.grid').imagesLoaded( function() {
+      // // init Masonry after all images have loaded
+      //  $grid.masonry({
+      //   // options...
+      //      });
+      //  });
+
+});
+
+   </script>
+   </body>
+ </html>

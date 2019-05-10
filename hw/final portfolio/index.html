@@ -6,34 +6,58 @@
 
     <style>
 
-      header{
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
-      }
+  font-family: 'Montserrat', sans-serif;
 
       nav{
-        width:800px;
+        width: 325px;
+        height: 50px;
         background-color: white;
-        margin-left: 50;
+        padding-left:50px;
+        margin-bottom: 250px;
       }
 
       nav ul{
-        margin-left: -15px;
+        margin-left: -5px;
       }
-
       nav ul li{
         list-style: none;
-        margin-left:-25px;
-        margin-bottom: 15px;
+        margin-right: 20px;
+        margin-left:-2px;
+        margin-bottom: 19px;
       }
-
       nav ul li a{
-        color: black;
         text-decoration: none;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
       }
 
       nav ul li a:hover{
-        color: black;
+        color: lightgrey;
       }
+
+      nav[role="main"] ul{
+      margin-bottom: 45px;
+      }
+
+      nav[role="main"] ul li{
+      font-size: 14px;
+      }
+
+      nav[role="sub"] ul li{
+        font-size: 11px;
+        margin-top: -10px;
+      }
+
+
+      #title{
+        height: 120px;
+        padding-left:-30px;
+        margin-bottom:-25px;
+        }
+
 
       .grid-item {
        float: left;
@@ -45,69 +69,96 @@
         width: 100%;
       }
 
-      .grid-item--width2 { width: 400px; }
+  .grid-item--width1 { width: 490px; }
+      .grid-item--width2 { width: 490px; }
+
       .grid-item--height2 { height: 400px; }
 
-    <!-- /* fluid 5 columns */
+    /* fluid 5 columns
       .grid-sizer,
       .grid-item { width: 20%; }
-    /* 2 columns */
-      .grid-item--width2 { width: 40%; } -->
+    2 columns
+      .grid-item--width2 { width: 40%; }
+        */
 
+        #col1{
+            width: 300px;
+            height: 1000px;
+            position: fixed;
+            top: 0;
+            padding-left:20px;
+            display: inline-block;
+        }
+        #col2{
+          width: 75%;
+          height: auto;
+          display: inline-block;
+          margin-left: 385px;
+        }
     </style>
 
   </head>
 
   <body>
 
-    <h1 id="title">Natalie Rey</h1>
-        <nav>
+    <main>
+      <section id="col1">
+        <h1 id="title"><img src= "images/logo.png"></h1>
+        <nav role="main">
           <ul>
-            <li>
-              <a href="#cover.html">cover</a>
-            </li>
-            <li>
-              <a href="#portraits.html">portraits</a>
-            </li>
-            <li>
-              <a href="#fashion.html">fashion</a>
-            </li>
-            <li>
-              <a href="#within.html">within</a>
-            </li>
-            <li>
-              <a href="#speakingintongues.html">speaking in tongues</a>
-            </li>
+            <li><a href="cover.html">cover</a></li>
+            <li><a href="portraits.html">portraits</a></li>
+            <li><a href="her.html">her</a></li>
+            <li><a href="skin.html">skin</a></li>
+            <li><a href="fashion.html">fashion</a></li>
+            <li><a href="within.html">within</a></li>
+            <li><a href="speakingintongues.html">speaking in tongues</a></li>
+
           </ul>
         </nav>
 
-  <div class="gridImages">
-    <div class="grid-item">
-        <img class="gridImages" src="images/mel8.jpg" />
-    </div>
+        <nav role="sub">
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        </nav>
 
-    <div class="grid-item grid-item--width2">
-        <img class="gridImages" src="images/mel8.jpg" />
-    </div>
 
-    <div class="grid-item grid-item--width2">
-        <img class="gridImages" src="images/mel9.jpg" />
-    </div>
-
-    <div class="grid-item">
-
-        <img class="gridImages" src="images/mel8.jpg" />
-
-    </div>
-
-    <!-- <div class="grid-sizer">
-      <section class="img1">
-        <img src="images/mel9.jpg" height="600" />
       </section>
-    </div>
-    <div class="grid-item grid-item--width2"></div>
-    <div class="grid-item grid-item--height2"></div> -->
- </div>
+
+      <section id="col2">
+        <div class="grid">
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/portrait8.jpg" />
+          </div>
+
+          <div class="grid-item grid-item--width2">
+              <img class="gridImages" src="images/her2.jpg" />
+          </div>
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/mel4.jpg" />
+          </div>
+
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/skin4.jpg" />
+          </div>
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/within1.jpg" />
+          </div>
+
+          <div class="grid-item grid-item--width1">
+              <img class="gridImages" src="images/speaking1.jpg" />
+          </div>
+
+       </div>
+
+      </section>
+    </main>
 
 
  <script type="text/javascript" src="plugin/jquery.js"></script>
@@ -122,16 +173,16 @@
    // set itemSelector so .grid-sizer is not used in layout
       itemSelector: '.grid-item',
    // use element for option
-      columnWidth: 200,
+      columnWidth: 250,
       percentPosition: true
       })
 
-    //   var $grid = $('.grid').imagesLoaded( function() {
-    // // init Masonry after all images have loaded
-    //  $grid.masonry({
-    //   // options...
-    //      });
-    //  });
+      //   var $grid = $('.grid').imagesLoaded( function() {
+      // // init Masonry after all images have loaded
+      //  $grid.masonry({
+      //   // options...
+      //      });
+      //  });
 
 });
 
